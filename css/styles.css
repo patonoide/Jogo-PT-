@@ -6,10 +6,10 @@
     padding-top: 100px;
     margin: auto;
     width: 38%;
-    
+
 }
 
-.a1 {
+#a1 {
     height: 150px;
     width: 150px;
     border-bottom: solid 1px;
@@ -18,7 +18,7 @@
     margin: 0px;
 }
 
-.a2 {
+#a2 {
     height: 150px;
     width: 150px;
     border-bottom: solid 1px;
@@ -28,7 +28,7 @@
     margin: 0px;
 }
 
-.a3 {
+#a3 {
     height: 150px;
     width: 150px;
     border-bottom: solid 1px;
@@ -37,7 +37,7 @@
     margin: 0px;
 }
 
-.b1 {
+#b1 {
     height: 150px;
     width: 150px;
     border-bottom: solid 1px;
@@ -47,7 +47,7 @@
     margin: 0px;
 }
 
-.b2 {
+#b2 {
     height: 150px;
     width: 150px;
     border: solid 1px;
@@ -55,7 +55,7 @@
     margin: 0px;
 }
 
-.b3 {
+#b3 {
     height: 150px;
     width: 150px;
     border-bottom: solid 1px;
@@ -65,7 +65,7 @@
     margin: 0px;
 }
 
-.c1 {
+#c1 {
     height: 150px;
     width: 150px;
     border-top: solid 1px;
@@ -73,7 +73,7 @@
     display: inline-block;
     margin: 0px;
 }
-.c2 {
+#c2 {
     height: 150px;
     width: 150px;
     border-top: solid 1px;
@@ -82,7 +82,7 @@
     display: inline-block;
     margin: 0px;
 }
-.c3 {
+#c3 {
     height: 150px;
     width: 150px;
     border-top: solid 1px;
