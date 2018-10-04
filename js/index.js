@@ -7,9 +7,21 @@ document.getElementsByClassName("b3")[0].addEventListener("click", b3 ,true);
 document.getElementsByClassName("c1")[0].addEventListener("click", c1 ,true);
 document.getElementsByClassName("c2")[0].addEventListener("click", c2 ,true);
 document.getElementsByClassName("c3")[0].addEventListener("click", c3 ,true);
+window.onload = turno.set(0);
+
+
+var turno {
+    function set(newturno){
+        this.turno = newturno;
+    }
+    function get(){
+        return turno;
+    }
 
 
 
+
+}
 
 function a1(){
 
