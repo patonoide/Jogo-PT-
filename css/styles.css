@@ -8,6 +8,13 @@
     width: 38%;
 
 }
+img{
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+
+    float:right;
+}
 
 #a1 {
     height: 150px;
