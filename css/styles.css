@@ -15,6 +15,9 @@ img{
 
     float:right;
 }
+.right{
+    float: right;
+}
 
 #a1 {
     height: 150px;
