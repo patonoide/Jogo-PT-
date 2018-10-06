@@ -81,9 +81,12 @@ function checar(jogador) {
         }
         cont = 0;
     }
+    //checa se todas as posições estão preenchidas sem ganhador
     if (x.length + o.length === 9) {
         alert("Deu Velha!!!");
         resetar();
+        x=[];
+        o=[];
     }
 
 }
