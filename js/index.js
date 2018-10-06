@@ -50,9 +50,10 @@ var jogo = [
         3, 5, 7
     ]
 ];
-
+//checa se algum jogador ganhou ou empatou
 function checar(jogador) {
     var cont = 0;
+    // varre a matriz com os possíveis jogos ganhos
     for (var j = 0; j < jogo.length; j++) {
 
         for (var w = 0; w < jogo[j].length; w++) {
@@ -61,7 +62,9 @@ function checar(jogador) {
 
                 if (jogo[j][w] === jogador[i]) {
                     cont++;
+                    //se o vetor do jogador tiver 3 acertos o jogador ganhou
                     if (cont === 3 && turno.get() === 1) {
+                        //alerta o jogador, reseta o jogo e os vetores de posições
                         alert("X Ganhou!!!");
                         resetar();
                         x=[];
@@ -79,6 +82,7 @@ function checar(jogador) {
         cont = 0;
     }
     if (x.length + o.length === 9) {
+        alert("Deu Velha!!!");
         resetar();
     }
 
@@ -88,6 +92,7 @@ function checar(jogador) {
 var x = [];
 var o = [];
 
+//reseta as peças nos quadrantes
 function resetar() {
     document.getElementById("a1").innerHTML = "";
     document.getElementById("a2").innerHTML = "";
@@ -103,13 +108,17 @@ function resetar() {
 
 function a1() {
 
+    //checa se o quadrante já foi populado
     if (document.getElementById("a1").innerHTML=== "") {
-
+        //checa se o turno é do X
         if (turno.get() === 0) {
-
+            //adiciona o elemento x ao quadrante
             document.getElementById("a1").innerHTML = ' <img src="../img/x.png" alt=""> ';
+            //modifica o turno para o próximo
             turno.set(1);
+            //acrescenta a posição conquistada no vetor
             x.push(1);
+            //chama a função de checar se ganhou o jogo
             checar(x);
 
         } else if (turno.get() === 1) {
