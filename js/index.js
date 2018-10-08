@@ -20,6 +20,10 @@ var turno = {
     }
 }
 
+//arrays com as coordenadas conquistadas
+var x = [];
+var o = [];
+
 //arrays com as coordenadas para jogo ganho
 /* 123
 456
@@ -89,9 +93,6 @@ function checar(jogador) {
 
 }
 
-//arrays com as coordenadas conquistadas
-var x = [];
-var o = [];
 
 //reseta as peças nos quadrantes
 function resetar() {
