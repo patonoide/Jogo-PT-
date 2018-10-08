@@ -68,13 +68,11 @@ function checar(jogador) {
                         //alerta o jogador, reseta o jogo e os vetores de posições
                         alert("X Ganhou!!!");
                         resetar();
-                        x=[];
-                        o=[];
+
                     } else if (cont === 3 && turno.get() === 0) {
                         alert("O Ganhou!!!");
                         resetar();
-                        x=[];
-                        o=[];
+
                     }
                 }
             }
@@ -86,8 +84,7 @@ function checar(jogador) {
     if (x.length + o.length === 9) {
         alert("Deu Velha!!!");
         resetar();
-        x=[];
-        o=[];
+
     }
 
 }
@@ -107,6 +104,9 @@ function resetar() {
     document.getElementById("c1").innerHTML = "";
     document.getElementById("c2").innerHTML = "";
     document.getElementById("c3").innerHTML = "";
+    x=[];
+    o=[];
+    turno.set(0);
 
 }
 
