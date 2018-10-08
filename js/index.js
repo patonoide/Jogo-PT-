@@ -1,3 +1,4 @@
+//Event listeners para chamarem as funções assim que os elementos são clicados
 document.getElementById("a1").addEventListener("click", a1, true);
 document.getElementById("a2").addEventListener("click", a2, true);
 document.getElementById("a3").addEventListener("click", a3, true);
@@ -8,8 +9,7 @@ document.getElementById("c1").addEventListener("click", c1, true);
 document.getElementById("c2").addEventListener("click", c2, true);
 document.getElementById("c3").addEventListener("click", c3, true);
 
-//turno 0 para x e turno 1 para O
-
+//getter e setter para o turno 0 para x e turno 1 para O
 var turno = {
     atual: 0,
     get: function() {
@@ -50,6 +50,7 @@ var jogo = [
         3, 5, 7
     ]
 ];
+
 //checa se algum jogador ganhou ou empatou
 function checar(jogador) {
     var cont = 0;
