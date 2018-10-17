@@ -25,9 +25,11 @@ var x = [];
 var o = [];
 
 //arrays com as coordenadas para jogo ganho
-/* 123
+/*
+123
 456
-789 */
+789
+*/
 var jogo = [
     [
         1, 2, 3
